@@ -395,7 +395,7 @@ export function HighlightsLayer(props: HighlightsLayerProps): JSX.Element {
   )
 
   const handleCloseNotebook = useCallback(
-    (updatedHighlights: Highlight[], deletedHighlights: Highlight[]) => {
+    (updatedHighlights: Highlight[]) => {
       props.setShowHighlightsModal(false)
 
       // Remove all the existing highlights, then set the new ones
